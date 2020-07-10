@@ -1,0 +1,9 @@
+version: "3"
+services: 
+  docker-aws-ebs:
+    build: .
+    ports:
+      - "3000:4200"
+    volumes: 
+      - "/app/node_modules"
+      - ".:/app"
